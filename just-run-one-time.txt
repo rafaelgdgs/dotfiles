@@ -1,0 +1,24 @@
+Needed packages: fd, ripgrep, fish, starship, eza, fisher
+
+
+-- The commitizen command line utility.
+
+sudo npm install -g commitizen
+npm install -g cz-conventional-changelog
+echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
+pacman -Qdtq | pacman -Rns -
+
+Connect to a local multiplexer server over unix domain sockets => https://wezfurlong.org/wezterm/features.html#available-features
+
+git config --global init.defaultBranch Main => change default git branch name
+
+
+git init --bare ~/.dotfiles
+alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
+-> fish: funcsave dotfiles
+dotfiles config status.showUntrackedFiles no
+
+git clone --bare <git-repo-url> $HOME/.dotfiles
+alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
+dotfiles checkout
+dotfiles config --local status.showUntrackedFiles no
