@@ -1,4 +1,4 @@
-Needed packages: fd, ripgrep, fish, starship, eza, fisher
+Needed packages: fd, ripgrep, fish, starship, eza, fisher, tealdeer, xclip, net-tools, inetutils, nmap
 
 
 -- The commitizen command line utility.
@@ -7,10 +7,13 @@ sudo npm install -g commitizen
 npm install -g cz-conventional-changelog
 echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
 pacman -Qdtq | pacman -Rns -
+pacman -D --asexplicit package
 
 Connect to a local multiplexer server over unix domain sockets => https://wezfurlong.org/wezterm/features.html#available-features
 
 git config --global init.defaultBranch Main => change default git branch name
+
+starship preset nerd-font-symbols -o ~/.config/starship.toml
 
 
 git init --bare ~/.dotfiles
