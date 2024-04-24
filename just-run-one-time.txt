@@ -8,6 +8,7 @@ npm install -g cz-conventional-changelog
 echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
 pacman -Qdtq | pacman -Rns -
 pacman -D --asexplicit package
+sudo compsize -x /
 
 Connect to a local multiplexer server over unix domain sockets => https://wezfurlong.org/wezterm/features.html#available-features
 
