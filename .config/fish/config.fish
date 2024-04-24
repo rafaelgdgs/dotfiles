@@ -4,4 +4,6 @@ end
 
 set -gx EDITOR nvim
 set -gx __fish_ls_command eza
+#eval "$(fzf --fish)"
+
 starship init fish | source
