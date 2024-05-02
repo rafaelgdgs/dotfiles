@@ -5,5 +5,6 @@ end
 set -gx EDITOR nvim
 set -gx __fish_ls_command eza
 #eval "$(fzf --fish)"
+set -gx RANGER_LOAD_DEFAULT_RC FALSE
 
 starship init fish | source
