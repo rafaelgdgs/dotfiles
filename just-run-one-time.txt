@@ -15,6 +15,19 @@ pacman -Ql package # List files installed with package
 
 sudo compsize -x /
 
+SHOW `columns` FROM `your-table`;
+CREATE USER 'username'@'host' IDENTIFIED WITH authentication_plugin BY 'password';
+CREATE USER 'sammy'@'localhost' IDENTIFIED BY 'password';
+RENAME USER 'sammy'@'localhost' TO 'sammy'@'remote_server_ip';
+https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql
+https://www.digitalocean.com/community/tutorials/how-to-allow-remote-access-to-mysql
+
+git reset # unstage all 'git add' files
+git checkout . # rever all local uncommited changes
+git clean -fdx # remove all local untracked files
+
+alias -s lsl "ls -l" # example
+
 Connect to a local multiplexer server over unix domain sockets => https://wezfurlong.org/wezterm/features.html#available-features
 
 git config --global init.defaultBranch main => change default git branch name
