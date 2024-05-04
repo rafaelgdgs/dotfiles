@@ -15,6 +15,21 @@ pacman -Ql package # List files installed with package
 
 sudo compsize -x /
 
+rustup default stable # Define the default toolchain
+rustup toolchain install nightly # Install a toolchain
+rustup target list # List available targets
+rustup target add X # Add x target
+cargo new hello_world
+rustup component add rust-analyzer
+rustup component add rust-src
+rustup component add clippy
+rustup component add rustfmt
+~/.cargo/config.toml:
+[target.$ARCH-pc-windows-gnu]
+linker = "/usr/bin/$ARCH-w64-mingw32-gcc"
+ar = "/usr/bin/$ARCH-w64-mingw32-ar"
+
+
 SHOW `columns` FROM `your-table`;
 CREATE USER 'username'@'host' IDENTIFIED WITH authentication_plugin BY 'password';
 CREATE USER 'sammy'@'localhost' IDENTIFIED BY 'password';
