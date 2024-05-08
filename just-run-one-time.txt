@@ -13,6 +13,14 @@ pacman -D --asexplicit package
 pacman -Qo package # Show package owner of a command
 pacman -Ql package # List files installed with package
 
+ctrl + alt + F # Search directory
+ctrl + alt + L # Search Git Log
+ctrl + alt + S # Search Git status
+ctrl + R # Search history
+ctrl + alt + P # Search Processes
+ctrl + V # Search Variables
+
+
 sudo compsize -x /
 
 rustup default stable # Define the default toolchain
@@ -38,10 +46,17 @@ https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-gr
 https://www.digitalocean.com/community/tutorials/how-to-allow-remote-access-to-mysql
 
 git reset # unstage all 'git add' files
+git reset HEAD~ # undo last commit
 git checkout . # rever all local uncommited changes
 git clean -fdx # remove all local untracked files
+https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git
+git branch --set-upstream-to=origin/main main
 
 alias -s lsl "ls -l" # example
+
+xdotool click --repeat [number of times to repeat] --delay [number of milliseconds between clicks] 1
+
+lsattr # List file attributes
 
 Connect to a local multiplexer server over unix domain sockets => https://wezfurlong.org/wezterm/features.html#available-features
 
