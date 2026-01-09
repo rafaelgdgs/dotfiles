@@ -1,0 +1,10 @@
+(setq custom-file "~/.emacs.custom.el")
+(load custom-file)
+(setq make-backup-files nil)
+;(setq backup-directory-alist '((".*" . "~/.emacs.d/backups"))) 
+
+(tool-bar-mode 0)
+(menu-bar-mode 0)
+(scroll-bar-mode 0)
+(column-number-mode 1)
+(global-display-line-numbers-mode)
