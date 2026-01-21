@@ -12,7 +12,11 @@
 (ido-mode 1)
 (ido-everywhere 1)
 (column-number-mode 1)
-(global-display-line-numbers-mode)
+(global-display-line-numbers-mode t)
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+(setq-default inhibit-startup-screen t)
+(setq-default display-line-numbers-type 'relative)
 
 (use-package gruber-darker-theme
   :ensure t)
@@ -30,3 +34,12 @@
 (global-set-key (kbd "C-c C-<")     'mc/mark-all-like-this)
 (global-set-key (kbd "C-\"")        'mc/skip-to-next-like-this)
 (global-set-key (kbd "C-:")         'mc/skip-to-previous-like-this)
+
+(use-package rustic
+  :ensure t)
+
+(use-package company
+  :ensure t)
+
+(use-package lsp-mode
+  :ensure t)
