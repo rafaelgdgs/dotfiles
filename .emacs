@@ -43,3 +43,5 @@
 
 (use-package lsp-mode
   :ensure t)
+
+(add-hook 'c-mode-hook 'lsp)
